@@ -1,0 +1,15 @@
+.swiper-pagination {
+  margin-top: 20rem;
+
+}
+
+/* .swiper-button-prev {
+  color: #079211 !important;
+  position: absolute;
+  margin-top: -190px;
+  z-index: 9999;
+} */
+
+.swiper-pagination-bullet {
+  background-color: #079211;
+}
