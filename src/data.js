@@ -3,7 +3,6 @@ import {
   // FiYoutube,
   FiInstagram,
   FiGithub,
-  // FiDribbble,
   FiLayout,
   FiSettings,
   FiPenTool,
@@ -11,8 +10,8 @@ import {
   FiMail,
   FiMapPin,
   FiLinkedin,
-  // HiOutlineMail
-  // TfiEmail
+ 
+
 } from 'react-icons/fi';
 
 // companies icons
@@ -29,6 +28,9 @@ import Project3 from './assets/img/projects/p3.webp';
 import Project4 from './assets/img/projects/p4.webp';
 import Project5 from './assets/img/projects/p5.webp';
 import Project6 from './assets/img/projects/p6.webp';
+
+// lastproject
+import projectOne from './assets/img/projects/eTask.png'
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -63,10 +65,7 @@ export const navigation = [
     name: 'hire',
     href: 'hire',
   },
-  // {
-  //   name: 'contact',
-  //   href: 'contact',
-  // },
+ 
 ];
 
 // social
@@ -89,29 +88,30 @@ export const social = [
   },
 ];
 
-// companies
-// export const brands = [
-//   {
-//     img: FreelancerBrandIcon,
-//     href: '',
-//   },
-//   {
-//     img: UpworkBrandIcon,
-//     href: '',
-//   },
-//   {
-//     img: FiverBrandIcon,
-//     href: '',
-//   },
-//   {
-//     img: BehanceBrandIcon,
-//     href: '',
-//   },
-//   {
-//     img: DribbbleBrandIcon,
-//     href: '',
-//   },
-// ];
+// projects last
+export const lastProject = [
+  {
+    id: '1',
+    image: projectOne,
+    name: 'E - Task',
+    role: 'Frontend Developer',
+    description : "E task mangement is platform for create task",
+    stack : "React Js - Tailwind css - Firebase",
+    icon: <FiGithub /> ,
+  },
+  {
+    id: '2',
+    image: projectOne,
+    name: 'E Task',
+    role: 'Frontend Developer',
+    description : "E task mangement is platform for create task",
+    stack : "React Js - Tailwind css - Firebase",
+    icon: <FiGithub /> ,
+  },
+];
+
+
+
 
 // projects
 export const projectsData = [
