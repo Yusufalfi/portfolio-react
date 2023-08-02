@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 // import { testimonials } from '../data'
 import { lastProject } from '../data'
+import { Link } from "react-router-dom";
 
 import {FiArrowRightCircle, FiArrowLeftCircle, FiX,  FiLink2 } from 'react-icons/fi';
 
@@ -16,6 +17,12 @@ import '../swiper.css'
 import { Autoplay, Pagination,  } from 'swiper';
 
 const LastProject = () => {
+  // console.log(link);
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
 
     const Ref = useRef()
     const handleNext = () => {
@@ -56,10 +63,11 @@ const LastProject = () => {
     modules={[Autoplay, Pagination]}
     className='mySwiper' ref={Ref} >
         {lastProject.map((item, index) => {
+          // console.log(item.icon)
             // const {authorImg, authorText} = item;
             return (
                 <SwiperSlide key={index} >
-                 <div className="flex flex-col lg:flex-row lg:gap-3 bg-secondary p-4 rounded-2xl">
+                 <div className="flex flex-col lg:flex-row lg:gap-3 bg-secondary p-4 rounded-2xl h-80">
                   
                         <div className='pic' onClick={() => zoomImage(item.image)}>
                           <img className="object-cover h-full rounded-2xl md:h-60 md:max-w-full md:rounded-l-lg"
@@ -80,14 +88,28 @@ const LastProject = () => {
                         <p className=" mt-5 text-md text-accent">
                             {item.stack}
                         </p>
+                        <p className=" mt-5 text-md text-accent">
+                            {item.url}
+                        </p>
                         <div className=" mt-5 text-md text-white-500 flex justify-start">
-                            <a className='text-sm flex mr-1 gap-2' href='https://github.com/Yusufalfi/task-mangement'  target="_blank"  rel="noreferrer">
+                          {/* <Link to={item.link} target="_blank"  rel="noreferrer">
+                            {item.icon} gthub 
+                          </Link> */}
+
+                          <Link href="#" className='text-sm flex gap-2' onClick = {() => openInNewTab(item.link)}><FiLink2 className='mt-1 ml-2'/> view website</Link>
+                          
+                          
+                            {/* <a className='text-sm flex mr-1 gap-2' href='https://github.com/Yusufalfi/task-mangement'  target="_blank"  rel="noreferrer">
                             {item.icon} view github |
                             </a>
 
-                            <a className='text-sm flex gap-2' href='https://github.com/Yusufalfi/task-mangement'  target="_blank"  rel="noreferrer">
+                            <a className='text-sm flex gap-2' href='https://rtqbaitunnajmi.com/'  target="_blank"  rel="noreferrer">
                             <FiLink2 className='mt-1'/> view website
-                            </a>
+                            </a> */}
+
+                          {/* <a className='text-sm flex gap-2' href='http://202.180.17.60:8001/dashboard'  target="_blank"  rel="noreferrer">
+                            <FiLink2 className='mt-1 ml-2'/> view website
+                            </a>  */}
                         </div>
                         </div>
                     </div>

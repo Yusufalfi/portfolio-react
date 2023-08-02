@@ -31,6 +31,8 @@ import Project6 from './assets/img/projects/p6.webp';
 
 // lastproject
 import projectOne from './assets/img/projects/eTask.png'
+import projectTwo from './assets/img/projects/dashboard.jpeg'
+import projectThree from './assets/img/projects/sales-dashboard.jpeg'
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -92,21 +94,36 @@ export const social = [
 export const lastProject = [
   {
     id: '1',
+    image: projectTwo,
+    name: 'E-RTQ ',
+    role: 'Fullstack Developer',
+    description : "E-RTQ Is a Web-based Application to Easily Manage the SPP Payment System at School, and school information system",
+    stack : "Codeigniter 3 - Bootstrap 4  - Mysql - Jquery",
+    icon: <FiGithub /> ,
+    link: 'https://rtqbaitunnajmi.com/'
+    // url : 'https://www.test.com'
+  },
+  
+  {
+    id: '2',
     image: projectOne,
     name: 'E - Task',
     role: 'Frontend Developer',
     description : "E task mangement is platform for create task",
     stack : "React Js - Tailwind css - Firebase",
-    icon: <FiGithub /> ,
+    icon: <FiGithub  /> ,
+    link:'https://github.com/Yusufalfi/task-mangement'
+    // url : 'https://www.test.com'
   },
   {
-    id: '2',
-    image: projectOne,
-    name: 'E Task',
+    id: '3',
+    image: projectThree,
+    name: 'Sales Dashboard ',
     role: 'Frontend Developer',
-    description : "E task mangement is platform for create task",
-    stack : "React Js - Tailwind css - Firebase",
+    description : "Sales dashboard is a system to manage and track sales team performance & team activities & sales order information, and customer service.",
+    stack : "React Js - material ui - Api",
     icon: <FiGithub /> ,
+    link: 'http://202.180.17.60:8001/login'
   },
 ];
 
