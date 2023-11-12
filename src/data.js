@@ -43,6 +43,9 @@ import SkillImg5 from './assets/img/skills/nextjs.png';
 import SkillImg6 from './assets/img/skills/nodejs.png';
 import SkillImg7 from './assets/img/skills/git.png';
 import SkillImg8 from './assets/img/skills/figma.png';
+import SkillImg9 from './assets/img/skills/sql.png';
+import SkillImg10 from './assets/img/skills/laravel-logo.png';
+// imp
 
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/photo-1.png';
@@ -191,27 +194,44 @@ export const projectsNav = [
 export const skills = [
   {
     image: SkillImg1,
+    name: "html"
   },
   {
     image: SkillImg2,
+    name: "css"
   },
   {
     image: SkillImg3,
+    name: "Javascript"
   },
   {
     image: SkillImg4,
+    name: "React js"
   },
   {
     image: SkillImg5,
+    name: "Next js"
   },
   {
     image: SkillImg6,
+    name: "Node js"
   },
   {
+    image: SkillImg10,
+    name: "Laravel"
+  },
+  {
+    image: SkillImg9,
+    name: "Mysql"
+  },
+
+  {
     image: SkillImg7,
+    name: "Git"
   },
   {
     image: SkillImg8,
+    name: "Figma"
   },
 ];
 
